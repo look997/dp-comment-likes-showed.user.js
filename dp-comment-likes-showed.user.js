@@ -3,7 +3,7 @@
 // @namespace  
 // @description		Dobreprogramy.pl Comments likes showed.
 // @author		look997
-// @version		0.1 beta
+// @version		0.2 beta
 // @grant		none
 // @include		http://www.dobreprogramy.pl/*
 // @date           2017-02-09
@@ -39,9 +39,17 @@ function main () {
                likesList += " "+like.name+",";
             });
             likesList = likesList.slice(0, -1);
-            var spanEl = document.createElement("span");
-            spanEl.textContent = likesList;
-            commentEl.querySelector(".upvote").appendChild(spanEl); 
+            
+            const likeslook997scriptEl = commentEl.querySelector(".upvote span.likes-list-look997userscript");
+            if (likeslook997scriptEl) {
+               likeslook997scriptEl.textConstent = likesList;
+            } else {
+               var spanEl = document.createElement("span");
+               spanEl.className = "likes-list-look997userscript"
+               spanEl.textContent = likesList;
+               commentEl.querySelector(".upvote").appendChild(spanEl);
+            }
+            
          }).catch(function(ex) {
             console.log("bug");
          });
