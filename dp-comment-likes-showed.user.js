@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name		Dp Comments likes showed
 // @namespace  
-// @description		Dp Comments likes showed
+// @description		Dobreprogramy.pl Comments likes showed.
 // @author		look997
 // @version		0.1 beta
 // @grant		none
 // @include		http://www.dobreprogramy.pl/*
-// @date           2016-12-17
-// @resource       metadata 
-// @downloadURL    
-// @updateURL      
+// @date           2017-02-09
+// @resource       metadata https://github.com/look997/dp-comment-likes-showed.user.js/raw/master/dp-comment-likes-showed.user.js
+// @downloadURL    https://github.com/look997/dp-comment-likes-showed.user.js/raw/master/dp-comment-likes-showed.user.js
+// @updateURL      https://github.com/look997/dp-comment-likes-showed.user.js/raw/master/dp-comment-likes-showed.user.js
 // @run-at 		document-end
 // ==/UserScript==
 
